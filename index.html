@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   
+<body style="background-color: #0066b2;">
+    <button id="btn" style="position: relative; top: 280px; left: 460px;">Click me</button>
+    <script>
+        let div1 = document.createElement("div");
+        div1.innerHTML = "OTP Generator";
+        div1.style.border = "2px solid #0066b2";
+        div1.style.background = "white";
+        div1.style.paddingTop = "50px"
+        div1.style.paddingLeft = "160px";
+        div1.style.fontSize = "30px";
+        div1.style.height = "300px";
+        div1.style.width = "400px";
+        div1.style.marginLeft = "300px"
+        div1
+        let div2 = document.createElement("div");
+        // div2.innerHTML ="hello"
+        div2.style.marginTop = "50px"
+        div2.style.border = "1px solid";
+        div2.style.height = "50px";
+        div2.style.width = "150px";
+       
+        div1.appendChild(div2);
+        document.body.appendChild(div1)
+
+       let  getb = document.getElementById("btn")
+       getb.style.height = "40px"
+       getb.style.width = "80px"
+
+
+        getb.addEventListener("click", () =>{
+            div2.innerHTML = Math.floor(Math.random() * 1000);
+        })
+
+        // localStorage.setItem("" ,"saranya2")
+        // localStorage.clear()
+        // let dd =localStorage.getItem("name2")
+        // document.write(dd)
+       
+
+    </script>
+</body>
+</html>
+
+<!-- //  let obj = [{name: "saranya", password:"saru"},{name: "anu", password:"ani"},{name: "pavani", password:"satya"}]
+// localStorage.setItem("User Details", JSON.stringify(obj)) -->
